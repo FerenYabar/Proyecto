@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DetalleReserva,detallesreservas } from 'src/app/modelo/detallereserva.class';
+import { Producto } from 'src/app/modelo/producto.class';
+import { ReservaService } from '../services/reserva.service';
 @Component({
   selector: 'app-reversa-main',
   templateUrl: './reversa-main.component.html',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReversaMainComponent implements OnInit {
 
-  constructor() { }
+  constructor(public reservaService:ReservaService) { }
 
   ngOnInit(): void {
+    
   }
+  
 
 }

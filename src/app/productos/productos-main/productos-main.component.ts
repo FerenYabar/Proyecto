@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { productoslocal, ProductoLocal } from '../../modelo/productolocal.class';
+import { ProductoService } from '../services/producto.service';
 
 @Component({
   selector: 'app-productos-main',
@@ -8,10 +9,12 @@ import { productoslocal, ProductoLocal } from '../../modelo/productolocal.class'
 })
 export class ProductosMainComponent implements OnInit {
 
-  constructor() { }
+  constructor(public productoService:ProductoService) {   
+  }
 
   ngOnInit(): void {
   }
- productoslocal:ProductoLocal[]= productoslocal;
+  
+
 }
 // console.log(productoslocal[0].producto.getimagenproducto())

@@ -15,7 +15,7 @@ export class DescripcionBoletaMainComponent implements OnInit {
   ngOnInit(): void {
   }
   detallesreservas:DetalleReserva[]=detallesreservas
-  productos= this.detallesreservas.filter(elemen => elemen.getReservas().getcodReserva()=="R0001");
+  productos= this.detallesreservas.filter(elemen => elemen.getReservas.getcodReserva()=="R0001");
 
   
 

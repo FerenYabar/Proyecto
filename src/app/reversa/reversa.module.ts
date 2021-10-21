@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReversaMainComponent } from './reversa-main/reversa-main.component';
+import { ReservaService } from './services/reserva.service';
 
 
 
@@ -13,6 +14,9 @@ import { ReversaMainComponent } from './reversa-main/reversa-main.component';
   ],
   imports: [
     CommonModule
+  ],
+  providers:[
+    ReservaService
   ]
 })
 export class ReversaModule { }

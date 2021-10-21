@@ -6,10 +6,13 @@ export class ProductoLocal{
         private codProductoLocal:String,
         private precioProductoLocal:number,
         private localProductoLocal:Local,
-        public producto:Producto
+        private producto:Producto
     ){}
     getprecioproductolocal():number{
         return this.precioProductoLocal
+    }
+    getproducto():Producto{
+        return this.producto
     }
 }
 const productolocal01=new ProductoLocal("PL0001",25,locales[1],productos[0])
